@@ -2,17 +2,18 @@
 {%block content %}
 <form method="POST">
     <h3 align="center">Sign Up</h3>
-    <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email"
-               id="email"
-               name="email"
-               placeholder="Enter e-mail"
-        />
         <div class="form-group">
-
+            <label for="email">Email Address</label>
+            <input type="email"
+                   class="form-control"
+                   id="email"
+                   name="email"
+                   placeholder="Enter e-mail"
+            />
+        <div class="form-group">
             <label for="first_name">First Name</label>
             <input type="first_name"
+                   class="form-control"
                    id="first_name"
                    name="first_name"
                    placeholder="Enter first name"
@@ -21,19 +22,22 @@
         <div class="form-group">
             <label for="password1">password</label>
             <input type="password1"
+                   class="form-control"
                    id="password1"
                    name="password1"
                    placeholder="Enter password"
             />
         </div>
         <div class="form-group">
-            <label for="password2">Repeat password</label>
+            <label for="password2">Password (Confirm)</label>
             <input type="password2"
+                   class="form-control"
                    id="password2"
                    name="password2"
-                   placeholder="Repeat password"
+                   placeholder="Confirm password"
             />
         </div>
     </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 {% endblock %}
